@@ -1,15 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Wedding msg=""/>
+  <TestLoad msg="Test Load Protocol"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TestLoad from './components/TestLoad.vue'
+import Wedding from './components/Wedding.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Wedding,
+    TestLoad
   }
 }
 </script>
@@ -21,6 +23,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 </style>

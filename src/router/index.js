@@ -1,21 +1,15 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import Wedding from '../components/Wedding';
-import WeddingGallery from '../components/WeddingGallery';
+import { createRouter, createWebHistory } from 'vue-router'
+import Wedding from '../components/Wedding.vue';
+import WeddingGallery from '../components/WeddingGallery.vue';
 
-Vue.use(Router);
+const routes = [
+  { path: '/', component: Wedding },
+  { path: '/weddingAlbum', component: WeddingGallery }
+]
 
-export default new Router({
-    routes: [
-        {
-            path: '/',
-            name: 'home',
-            component: Wedding
-        },
-        {
-            path: '/weddingGallery',
-            name: 'gallery',
-            component: WeddingGallery
-        }
-    ]
-});
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+})
+
+export default router

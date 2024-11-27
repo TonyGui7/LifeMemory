@@ -13,10 +13,10 @@ export default {
   data() {
     return {
       images: [
-        'http://10.30.24.141:9697/weddinggallery/WechatIMG264.jpeg',
-        'http://10.30.24.141:9697/weddinggallery/WechatIMG265.jpeg',
-        'http://10.30.24.141:9697/weddinggallery/WechatIMG266.jpeg',
-        'http://10.30.24.141:9697/weddinggallery/WechatIMG267.jpeg'
+        'http://10.30.24.141:9697/weddingRes/WechatIMG264.jpeg',
+        'http://10.30.24.141:9697/weddingRes/WechatIMG265.jpeg',
+        'http://10.30.24.141:9697/weddingRes/WechatIMG266.jpeg',
+        'http://10.30.24.141:9697/weddingRes/WechatIMG267.jpeg'
       ],
     };
   },

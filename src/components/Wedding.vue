@@ -5,10 +5,9 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">Couple</a></li>
         <li><a href="#">Story</a></li>
-        <li><a href="#">Gallery</a></li>
+        <li><router-link to="weddingAlbum">Gallery</router-link></li>
       </ul>
     </nav>
-
     <div class="wedding-title">
       <h1>We are getting married</h1>
     </div>
@@ -29,7 +28,7 @@ export default {
 
 <style scoped>
 .wedding-hero {
-  background-image: url('http://10.30.24.141:9697/weddinggallery/DSC09886.jpg');
+  background-image: url('http://10.30.24.141:9697/weddingRes/DSC09886.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;

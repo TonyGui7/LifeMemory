@@ -1,15 +1,10 @@
 <template>
-  <Wedding msg=""/>
+  <router-view></router-view>
 </template>
 
 <script>
-import Wedding from './components/Wedding.vue'
-
 export default {
-  name: 'App',
-  components: {
-    Wedding
-  }
+  name: 'App'
 }
 </script>
 

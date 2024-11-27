@@ -1,0 +1,33 @@
+@font-face {
+font-family: 'Rostacio';
+src: url('../font/rostacio.ttf') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'NoteScript_SemiBold';
+src: url('../font/note-script-semibold.ttf') format('opentype');
+font-weight: bold;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'XingShu2';
+src: url('../font/xingshu-2.ttc') format('opentype');
+font-weight: bold;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'HanYi2';
+src: url('../font/hanyi-yongding-2.ttf') format('opentype');
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: 'XiangJiao2';
+src: url('../font/xiangjiao-quwan-2.ttf') format('opentype');
+font-weight: bold;
+font-style: normal;
+}

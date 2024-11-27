@@ -6,15 +6,16 @@
         <li><a href="#">Couple</a></li>
         <li><a href="#">Story</a></li>
         <li><a href="#">Gallery</a></li>
-        <li><a href="#">Event</a></li>
-        <li><a href="#">RSVP</a></li>
       </ul>
     </nav>
 
-    <div class="hero-content">
+    <div class="wedding-title">
       <h1>We are getting married</h1>
+    </div>
+
+    <div class="hero-content">
       <h2>桂志宏 & 徐元元</h2>
-      <p>Tianxi, XiaoGan, Hubei</p>
+      <p>天禧宴会中心/孝感/湖北</p>
       <p>16 March 2025</p>
     </div>
   </div>
@@ -29,7 +30,9 @@ export default {
 <style scoped>
 .wedding-hero {
   background-image: url('http://10.30.24.141:9697/weddinggallery/DSC09886.jpg');
-  height: 500vh;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,11 +53,6 @@ export default {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.logo {
-  height: 50px;
-  margin-left: 20px;
-}
-
 .nav-links {
   list-style-type: none;
   display: flex;
@@ -68,19 +66,80 @@ export default {
   font-weight: bold;
 }
 
-.hero-content h1 {
+.wedding-title {
+  position: absolute;
+  top: 60px;
+}
+.wedding-title h1 {
   font-size: 48px;
+  font-weight: bold;
   margin-bottom: 8px;
+  font-family: 'NoteScript_SemiBold';
 }
 
+.hero-content {
+  position: absolute;
+  bottom: 20px;
+}
 .hero-content h2 {
   font-size: 72px;
   margin-bottom: 16px;
-  font-family: 'Brush Script MT', cursive;
+  font-family: 'HanYi2';
+  color: red; /* 设置字体颜色为红色 */
 }
 
 .hero-content p {
   font-size: 24px;
   margin-top: 4px;
+  font-family: 'XiangJiao2';
+  font-weight: bold; /* 加粗字体 */
+  color: black;
+  font-style: italic;
 }
+
+/* 横屏模式下的样式 */
+@media (orientation: landscape) {
+  .wedding-hero {
+    flex-direction: row;
+  }
+
+  .navbar {
+    order: 1;
+    margin-left: 20px;
+  }
+
+  .hero-content {
+    order: 2;
+    margin-right: 20px;
+  }
+}
+
+/* 竖屏模式下的样式 */
+@media (orientation: portrait) {
+  .wedding-hero {
+    flex-direction: column;
+  }
+
+  .navbar {
+    margin-top: 10px;
+  }
+
+.wedding-title {
+  position: absolute;
+  top: 100px;
+}
+.wedding-title h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+  .hero-content {
+    margin-top: 30px;
+  }
+  .hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+}
+
 </style>

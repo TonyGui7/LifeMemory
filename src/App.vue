@@ -1,17 +1,14 @@
 <template>
   <Wedding msg=""/>
-  <TestLoad msg="Test Load Protocol"/>
 </template>
 
 <script>
-import TestLoad from './components/TestLoad.vue'
 import Wedding from './components/Wedding.vue'
 
 export default {
   name: 'App',
   components: {
-    Wedding,
-    TestLoad
+    Wedding
   }
 }
 </script>

@@ -1,8 +1,10 @@
 <template>
   <div class="photo-album">
     <div class="photo-row" v-for="(row, index) in imageRows" :key="index">
-      <div class="photo-cell" v-for="(imageUrl, idx) in row" :key="idx">
-        <img :src="imageUrl" class="photo-image" />
+      <div class="photo-cell" v-for="image in row" :key="image.id">
+        <a :href="image.fullImg" target="_blank">
+           <img :src="image.fullImg" class="photo-image" />
+        </a>
       </div>
     </div>
   </div>
@@ -13,10 +15,10 @@ export default {
   data() {
     return {
       images: [
-        'http://10.30.24.141:9697/weddingRes/WechatIMG264.jpeg',
-        'http://10.30.24.141:9697/weddingRes/WechatIMG265.jpeg',
-        'http://10.30.24.141:9697/weddingRes/WechatIMG266.jpeg',
-        'http://10.30.24.141:9697/weddingRes/WechatIMG267.jpeg'
+        {id:1, fullImg: 'http://10.30.24.141:9697/weddingRes/WechatIMG264.jpeg'},
+        {id:2, fullImg: 'http://10.30.24.141:9697/weddingRes/WechatIMG265.jpeg'},
+        {id:3, fullImg: 'http://10.30.24.141:9697/weddingRes/WechatIMG266.jpeg'},
+        {id:4, fullImg: 'http://10.30.24.141:9697/weddingRes/WechatIMG267.jpeg'}
       ],
     };
   },

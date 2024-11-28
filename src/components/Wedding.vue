@@ -1,5 +1,6 @@
 <template>
   <div class="wedding-hero">
+    <img class="wedding-hero-bg" src="/weddingRes/DSC09886.jpg" alt="Wedding Hero Background">
     <nav class="navbar">
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
@@ -27,11 +28,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .wedding-hero {
-  background-image: url('http://10.30.24.237:9697/weddingRes/DSC09886.jpg');
-  background-size: cover;
-  background-position: center;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -39,6 +37,17 @@ export default {
   text-align: center;
   color: white;
   position: relative;
+  overflow: hidden; /* 防止内容溢出 */
+}
+.wedding-hero-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* 宽度为容器宽度 */
+  height: 100%; /* 高度为容器高度 */
+  object-fit: cover; /* 背景图片覆盖整个容器，保持宽高比 */
+  z-index: -1; /* 确保背景图在内容下方 */
 }
 
 .navbar {

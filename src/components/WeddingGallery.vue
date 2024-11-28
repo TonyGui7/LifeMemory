@@ -3,7 +3,7 @@
     <div class="photo-row" v-for="(row, index) in imageRows" :key="index">
       <div class="photo-cell" v-for="image in row" :key="image.id">
         <a :href="image.fullImg" target="_blank">
-           <img :src="image.fullImg" class="photo-image" />
+           <img :src="image.thumbImg" class="photo-image" />
         </a>
       </div>
     </div>

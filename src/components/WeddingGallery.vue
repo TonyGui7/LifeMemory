@@ -11,22 +11,15 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
-  data() {
-    return {
-      images: [
-        {id:1, fullImg: 'http://10.30.24.141:9697/weddingRes/WechatIMG264.jpeg'},
-        {id:2, fullImg: 'http://10.30.24.141:9697/weddingRes/WechatIMG265.jpeg'},
-        {id:3, fullImg: 'http://10.30.24.141:9697/weddingRes/WechatIMG266.jpeg'},
-        {id:4, fullImg: 'http://10.30.24.141:9697/weddingRes/WechatIMG267.jpeg'}
-      ],
-    };
-  },
   computed: {
+    ...mapState(['imageLinks']),
     imageRows() {
       const rows = [];
-      for (let i = 0; i < this.images.length; i += 4) {
-        rows.push(this.images.slice(i, i + 4));
+      for (let i = 0; i < this.imageLinks.length; i += 4) {
+        rows.push(this.imageLinks.slice(i, i + 4));
       }
       return rows;
     },

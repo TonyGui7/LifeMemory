@@ -2,10 +2,12 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import './assets/styles/global.css'
 import router from './router' // 引入路由配置
+import store from './store'
 
 const app = createApp(App)
 
 app.use(router) // 使用路由
+app.use(store)
 
 app.mount('#app')
 

@@ -21,14 +21,15 @@
 </template>
 
 <script>
+
 export default {
-  name: 'WeddingHero'
+  name: 'WeddingHero',
 }
 </script>
 
 <style scoped>
 .wedding-hero {
-  background-image: url('http://10.30.24.141:9697/weddingRes/DSC09886.jpg');
+  background-image: url('http://10.30.24.237:9697/weddingRes/DSC09886.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;

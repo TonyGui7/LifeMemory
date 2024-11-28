@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
   name: 'ImageDetail',
   props: {
@@ -13,19 +15,10 @@ export default {
       required: true,
     },
   },
-  data() {
-    return {
-            images: [
-              {id:1, fullImg: 'http://10.30.24.141:9697/weddingRes/WechatIMG264.jpeg'},
-              {id:2, fullImg: 'http://10.30.24.141:9697/weddingRes/WechatIMG265.jpeg'},
-              {id:3, fullImg: 'http://10.30.24.141:9697/weddingRes/WechatIMG266.jpeg'},
-              {id:4, fullImg: 'http://10.30.24.141:9697/weddingRes/WechatIMG267.jpeg'}
-            ],
-    };
-  },
   computed: {
+    ...mapState(['imageLinks']),
     image() {
-      return this.images.find((img) => img.id === this.id) || {};
+      return this.imageLinks.find((img) => img.id === this.id) || {};
     },
     fullImage() {
       return this.image.fullImage;

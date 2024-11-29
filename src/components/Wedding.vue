@@ -1,6 +1,6 @@
 <template>
   <div class="wedding-hero">
-    <img class="wedding-hero-bg" src="https://github.com/TonyGui7/maven-repo/raw/master/resources/weddingRes/DSC09886.jpg" alt="Wedding Hero Background">
+    <img class="wedding-hero-bg" src="/weddingRes/DSC09886.jpg" alt="Wedding Hero Background">
     <nav class="navbar">
       <ul class="nav-links">
         <li><a href="#">Home</a></li>

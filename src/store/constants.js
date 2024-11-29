@@ -1,1 +1,1 @@
-export const ExternalHost = 'https://github.com/TonyGui7/maven-repo/raw/master/resources';
+export const ExternalHost = 'http://47.98.227.0';
